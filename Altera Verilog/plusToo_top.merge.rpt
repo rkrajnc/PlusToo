@@ -1,0 +1,357 @@
+Partition Merge report for plusToo_top
+Thu Sep 22 12:37:38 2011
+Quartus II Version 11.0 Build 157 04/27/2011 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Partition Merge Summary
+  3. Partition Merge Netlist Types Used
+  4. Connections to In-System Debugging Instance "auto_signaltap_0"
+  5. Partition Merge Partition Statistics
+  6. Partition Merge Resource Usage Summary
+  7. Partition Merge RAM Summary
+  8. Partition Merge Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2011 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Partition Merge Summary                                                       ;
++------------------------------------+------------------------------------------+
+; Partition Merge Status             ; Successful - Thu Sep 22 12:37:37 2011    ;
+; Quartus II Version                 ; 11.0 Build 157 04/27/2011 SJ Web Edition ;
+; Revision Name                      ; plusToo_top                              ;
+; Top-level Entity Name              ; plusToo_top                              ;
+; Family                             ; Cyclone II                               ;
+; Total logic elements               ; 5,726                                    ;
+;     Total combinational functions  ; 4,783                                    ;
+;     Dedicated logic registers      ; 2,022                                    ;
+; Total registers                    ; 2022                                     ;
+; Total pins                         ; 149                                      ;
+; Total virtual pins                 ; 0                                        ;
+; Total memory bits                  ; 7,040                                    ;
+; Embedded Multiplier 9-bit elements ; 0                                        ;
+; Total PLLs                         ; 1                                        ;
++------------------------------------+------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Netlist Types Used                                                                                            ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Partition Name                 ; Partition Type ; Netlist Type Used ; Netlist Type Requested ; Partition Contents             ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+; Top                            ; User-created   ; Source File       ; Source File            ;                                ;
+; sld_hub:auto_hub               ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_hub:auto_hub               ;
+; sld_signaltap:auto_signaltap_0 ; Auto-generated ; Post-Synthesis    ; Post-Synthesis         ; sld_signaltap:auto_signaltap_0 ;
+; hard_block:auto_generated_inst ; Auto-generated ; Source File       ; Source File            ; hard_block:auto_generated_inst ;
++--------------------------------+----------------+-------------------+------------------------+--------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Connections to In-System Debugging Instance "auto_signaltap_0"                                                                                                                                                 ;
++-------------------------------------------------------------+---------------+-----------+----------------+-------------------+-----------------------------------------------------------------------+---------+
+; Name                                                        ; Type          ; Status    ; Partition Name ; Netlist Type Used ; Actual Connection                                                     ; Details ;
++-------------------------------------------------------------+---------------+-----------+----------------+-------------------+-----------------------------------------------------------------------+---------+
+; TG68:m68k|addr[0]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[0]~1                       ; N/A     ;
+; TG68:m68k|addr[0]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[0]~1                       ; N/A     ;
+; TG68:m68k|addr[10]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[10]~21                     ; N/A     ;
+; TG68:m68k|addr[10]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[10]~21                     ; N/A     ;
+; TG68:m68k|addr[11]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[11]~23                     ; N/A     ;
+; TG68:m68k|addr[11]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[11]~23                     ; N/A     ;
+; TG68:m68k|addr[12]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[12]~25                     ; N/A     ;
+; TG68:m68k|addr[12]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[12]~25                     ; N/A     ;
+; TG68:m68k|addr[13]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[13]~27                     ; N/A     ;
+; TG68:m68k|addr[13]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[13]~27                     ; N/A     ;
+; TG68:m68k|addr[14]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[14]~29                     ; N/A     ;
+; TG68:m68k|addr[14]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[14]~29                     ; N/A     ;
+; TG68:m68k|addr[15]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[15]~31                     ; N/A     ;
+; TG68:m68k|addr[15]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[15]~31                     ; N/A     ;
+; TG68:m68k|addr[16]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[16]~0                      ; N/A     ;
+; TG68:m68k|addr[16]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[16]~0                      ; N/A     ;
+; TG68:m68k|addr[17]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[17]~2                      ; N/A     ;
+; TG68:m68k|addr[17]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[17]~2                      ; N/A     ;
+; TG68:m68k|addr[18]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[18]~4                      ; N/A     ;
+; TG68:m68k|addr[18]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[18]~4                      ; N/A     ;
+; TG68:m68k|addr[19]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[19]~6                      ; N/A     ;
+; TG68:m68k|addr[19]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[19]~6                      ; N/A     ;
+; TG68:m68k|addr[1]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[1]~3                       ; N/A     ;
+; TG68:m68k|addr[1]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[1]~3                       ; N/A     ;
+; TG68:m68k|addr[20]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[20]~8                      ; N/A     ;
+; TG68:m68k|addr[20]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[20]~8                      ; N/A     ;
+; TG68:m68k|addr[21]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[21]~10                     ; N/A     ;
+; TG68:m68k|addr[21]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[21]~10                     ; N/A     ;
+; TG68:m68k|addr[22]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[22]~12                     ; N/A     ;
+; TG68:m68k|addr[22]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[22]~12                     ; N/A     ;
+; TG68:m68k|addr[23]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[23]~14                     ; N/A     ;
+; TG68:m68k|addr[23]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[23]~14                     ; N/A     ;
+; TG68:m68k|addr[24]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[24]~16                     ; N/A     ;
+; TG68:m68k|addr[24]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[24]~16                     ; N/A     ;
+; TG68:m68k|addr[25]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[25]~18                     ; N/A     ;
+; TG68:m68k|addr[25]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[25]~18                     ; N/A     ;
+; TG68:m68k|addr[26]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[26]~20                     ; N/A     ;
+; TG68:m68k|addr[26]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[26]~20                     ; N/A     ;
+; TG68:m68k|addr[27]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[27]~22                     ; N/A     ;
+; TG68:m68k|addr[27]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[27]~22                     ; N/A     ;
+; TG68:m68k|addr[28]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[28]~24                     ; N/A     ;
+; TG68:m68k|addr[28]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[28]~24                     ; N/A     ;
+; TG68:m68k|addr[29]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[29]~26                     ; N/A     ;
+; TG68:m68k|addr[29]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[29]~26                     ; N/A     ;
+; TG68:m68k|addr[2]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[2]~5                       ; N/A     ;
+; TG68:m68k|addr[2]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[2]~5                       ; N/A     ;
+; TG68:m68k|addr[30]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[30]~28                     ; N/A     ;
+; TG68:m68k|addr[30]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[30]~28                     ; N/A     ;
+; TG68:m68k|addr[31]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[31]~30                     ; N/A     ;
+; TG68:m68k|addr[31]                                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[31]~30                     ; N/A     ;
+; TG68:m68k|addr[3]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[3]~7                       ; N/A     ;
+; TG68:m68k|addr[3]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[3]~7                       ; N/A     ;
+; TG68:m68k|addr[4]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[4]~9                       ; N/A     ;
+; TG68:m68k|addr[4]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[4]~9                       ; N/A     ;
+; TG68:m68k|addr[5]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[5]~11                      ; N/A     ;
+; TG68:m68k|addr[5]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[5]~11                      ; N/A     ;
+; TG68:m68k|addr[6]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[6]~13                      ; N/A     ;
+; TG68:m68k|addr[6]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[6]~13                      ; N/A     ;
+; TG68:m68k|addr[7]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[7]~15                      ; N/A     ;
+; TG68:m68k|addr[7]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[7]~15                      ; N/A     ;
+; TG68:m68k|addr[8]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[8]~17                      ; N/A     ;
+; TG68:m68k|addr[8]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[8]~17                      ; N/A     ;
+; TG68:m68k|addr[9]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[9]~19                      ; N/A     ;
+; TG68:m68k|addr[9]                                           ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|address[9]~19                      ; N/A     ;
+; TG68:m68k|data_in[0]                                        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[0]~13                               ; N/A     ;
+; TG68:m68k|data_in[10]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[10]~18                              ; N/A     ;
+; TG68:m68k|data_in[11]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[11]~25                              ; N/A     ;
+; TG68:m68k|data_in[12]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[12]~61                              ; N/A     ;
+; TG68:m68k|data_in[13]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[13]~79_wirecell                     ; N/A     ;
+; TG68:m68k|data_in[14]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[14]~83                              ; N/A     ;
+; TG68:m68k|data_in[15]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[15]~88                              ; N/A     ;
+; TG68:m68k|data_in[1]                                        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[1]~92                               ; N/A     ;
+; TG68:m68k|data_in[2]                                        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[2]~95                               ; N/A     ;
+; TG68:m68k|data_in[3]                                        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[3]~98                               ; N/A     ;
+; TG68:m68k|data_in[4]                                        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[4]~129                              ; N/A     ;
+; TG68:m68k|data_in[5]                                        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[5]~104                              ; N/A     ;
+; TG68:m68k|data_in[6]                                        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[6]~107                              ; N/A     ;
+; TG68:m68k|data_in[7]                                        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[7]~110                              ; N/A     ;
+; TG68:m68k|data_in[8]                                        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[8]~115                              ; N/A     ;
+; TG68:m68k|data_in[9]                                        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|cpuDataOut[9]~124                              ; N/A     ;
+; TG68:m68k|data_out[0]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[0]~2                    ; N/A     ;
+; TG68:m68k|data_out[10]                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[10]~22                  ; N/A     ;
+; TG68:m68k|data_out[11]                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[11]~24                  ; N/A     ;
+; TG68:m68k|data_out[12]                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[12]~26                  ; N/A     ;
+; TG68:m68k|data_out[13]                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[13]~28                  ; N/A     ;
+; TG68:m68k|data_out[14]                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[14]~30                  ; N/A     ;
+; TG68:m68k|data_out[15]                                      ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[15]~32                  ; N/A     ;
+; TG68:m68k|data_out[1]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[1]~4                    ; N/A     ;
+; TG68:m68k|data_out[2]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[2]~6                    ; N/A     ;
+; TG68:m68k|data_out[3]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[3]~8                    ; N/A     ;
+; TG68:m68k|data_out[4]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[4]~10                   ; N/A     ;
+; TG68:m68k|data_out[5]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[5]~12                   ; N/A     ;
+; TG68:m68k|data_out[6]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[6]~14                   ; N/A     ;
+; TG68:m68k|data_out[7]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[7]~16                   ; N/A     ;
+; TG68:m68k|data_out[8]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[8]~18                   ; N/A     ;
+; TG68:m68k|data_out[9]                                       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|TG68_fast:TG68_fast_inst|data_write[9]~20                   ; N/A     ;
+; TG68:m68k|dtack                                             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; debugPanel:dp|_dtackOut~16                                            ; N/A     ;
+; TG68:m68k|rw                                                ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|rw~0                                                        ; N/A     ;
+; TG68:m68k|rw                                                ; pre-synthesis ; connected ; Top            ; post-synthesis    ; TG68:m68k|rw~0                                                        ; N/A     ;
+; dataController_top:dc0|clkPhase[1]                          ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|clkPhase[1]                                    ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|clkdown     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|clkdown~_wirecell     ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|ibyte[0]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftreg[1]           ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|ibyte[1]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftreg[2]           ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|ibyte[2]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftreg[3]           ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|ibyte[3]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftreg[4]           ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|ibyte[4]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftreg[5]           ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|ibyte[5]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftreg[6]           ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|ibyte[6]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftreg[7]           ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|ibyte[7]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftreg[8]           ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|istrobe     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|istrobe               ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|oreq        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|oreq                           ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|oreq        ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|oreq                           ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|reset       ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|Equal0~6                                       ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftcnt[0] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftcnt[0]           ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftcnt[1] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftcnt[1]~_wirecell ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftcnt[2] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftcnt[2]           ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftcnt[3] ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|shiftcnt[3]~_wirecell ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|state[0]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|state[0]              ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|state[1]    ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|state[1]              ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|timeout     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|Equal9~7              ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|timeout     ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|ps2:ps20|Equal9~7              ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|state[0]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|state[0]                       ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|state[0]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|state[0]                       ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|state[1]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|state[1]                       ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|state[1]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|state[1]                       ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|state[2]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|state[2]                       ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|state[2]             ; pre-synthesis ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|state[2]                       ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|button               ; post-fitting  ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|button                         ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|button               ; post-fitting  ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|button                         ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|x1                   ; post-fitting  ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|x1                             ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|x1                   ; post-fitting  ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|x1                             ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|x2                   ; post-fitting  ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|x2                             ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|x2                   ; post-fitting  ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|x2                             ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|y1                   ; post-fitting  ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|y1                             ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|y1                   ; post-fitting  ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|y1                             ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|y2                   ; post-fitting  ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|y2                             ; N/A     ;
+; dataController_top:dc0|ps2_mouse:mouse|y2                   ; post-fitting  ; connected ; Top            ; post-synthesis    ; dataController_top:dc0|ps2_mouse:mouse|y2                             ; N/A     ;
++-------------------------------------------------------------+---------------+-----------+----------------+-------------------+-----------------------------------------------------------------------+---------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge Partition Statistics                                                                                                     ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+; Statistic                                   ; Top   ; sld_hub:auto_hub ; sld_signaltap:auto_signaltap_0 ; hard_block:auto_generated_inst ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+; Estimated Total logic elements              ; 4488  ; 115              ; 1143                           ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Total combinational functions               ; 4295  ; 105              ; 383                            ; 0                              ;
+; Logic element usage by number of LUT inputs ;       ;                  ;                                ;                                ;
+;     -- 4 input functions                    ; 2789  ; 42               ; 182                            ; 0                              ;
+;     -- 3 input functions                    ; 961   ; 41               ; 152                            ; 0                              ;
+;     -- <=2 input functions                  ; 545   ; 22               ; 49                             ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Logic elements by mode                      ;       ;                  ;                                ;                                ;
+;     -- normal mode                          ; 3865  ; 101              ; 355                            ; 0                              ;
+;     -- arithmetic mode                      ; 430   ; 4                ; 28                             ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Total registers                             ; 939   ; 73               ; 1010                           ; 0                              ;
+;     -- Dedicated logic registers            ; 939   ; 73               ; 1010                           ; 0                              ;
+;     -- I/O registers                        ; 0     ; 0                ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Virtual pins                                ; 0     ; 0                ; 0                              ; 0                              ;
+; I/O pins                                    ; 149   ; 0                ; 0                              ; 0                              ;
+; Embedded Multiplier 9-bit elements          ; 0     ; 0                ; 0                              ; 0                              ;
+; Total memory bits                           ; 1088  ; 0                ; 5952                           ; 0                              ;
+; Total RAM block bits                        ; 0     ; 0                ; 0                              ; 0                              ;
+; JTAG                                        ; 1     ; 0                ; 0                              ; 0                              ;
+; PLL                                         ; 0     ; 0                ; 0                              ; 1                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Connections                                 ;       ;                  ;                                ;                                ;
+;     -- Input Connections                    ; 19    ; 112              ; 1517                           ; 1                              ;
+;     -- Registered Input Connections         ; 18    ; 82               ; 1161                           ; 0                              ;
+;     -- Output Connections                   ; 1440  ; 190              ; 1                              ; 18                             ;
+;     -- Registered Output Connections        ; 806   ; 189              ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Internal Connections                        ;       ;                  ;                                ;                                ;
+;     -- Total Connections                    ; 21112 ; 760              ; 5567                           ; 19                             ;
+;     -- Registered Connections               ; 6933  ; 584              ; 4210                           ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; External Connections                        ;       ;                  ;                                ;                                ;
+;     -- Top                                  ; 0     ; 104              ; 1336                           ; 19                             ;
+;     -- sld_hub:auto_hub                     ; 104   ; 16               ; 182                            ; 0                              ;
+;     -- sld_signaltap:auto_signaltap_0       ; 1336  ; 182              ; 0                              ; 0                              ;
+;     -- hard_block:auto_generated_inst       ; 19    ; 0                ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Partition Interface                         ;       ;                  ;                                ;                                ;
+;     -- Input Ports                          ; 26    ; 18               ; 193                            ; 1                              ;
+;     -- Output Ports                         ; 198   ; 36               ; 146                            ; 1                              ;
+;     -- Bidir Ports                          ; 18    ; 0                ; 0                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Registered Ports                            ;       ;                  ;                                ;                                ;
+;     -- Registered Input Ports               ; 0     ; 4                ; 141                            ; 0                              ;
+;     -- Registered Output Ports              ; 0     ; 26               ; 1                              ; 0                              ;
+;                                             ;       ;                  ;                                ;                                ;
+; Port Connectivity                           ;       ;                  ;                                ;                                ;
+;     -- Input Ports driven by GND            ; 0     ; 1                ; 0                              ; 0                              ;
+;     -- Output Ports driven by GND           ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports driven by VCC            ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Output Ports driven by VCC           ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Source           ; 0     ; 0                ; 35                             ; 0                              ;
+;     -- Output Ports with no Source          ; 0     ; 0                ; 0                              ; 0                              ;
+;     -- Input Ports with no Fanout           ; 0     ; 1                ; 40                             ; 0                              ;
+;     -- Output Ports with no Fanout          ; 0     ; 14               ; 137                            ; 0                              ;
++---------------------------------------------+-------+------------------+--------------------------------+--------------------------------+
+Note: Resource usage numbers presented for Partitions containing post-synthesis logic are estimates.  For Partitions containing post-fit logic, resource usage numbers are accurate based on previous placement information.  Actual Fitter results may vary depending on current Fitter Preservation Level assignments.
+
+
++----------------------------------------------------------------------------------+
+; Partition Merge Resource Usage Summary                                           ;
++---------------------------------------------+------------------------------------+
+; Resource                                    ; Usage                              ;
++---------------------------------------------+------------------------------------+
+; Estimated Total logic elements              ; 5,726                              ;
+;                                             ;                                    ;
+; Total combinational functions               ; 4783                               ;
+; Logic element usage by number of LUT inputs ;                                    ;
+;     -- 4 input functions                    ; 3013                               ;
+;     -- 3 input functions                    ; 1154                               ;
+;     -- <=2 input functions                  ; 616                                ;
+;                                             ;                                    ;
+; Logic elements by mode                      ;                                    ;
+;     -- normal mode                          ; 4321                               ;
+;     -- arithmetic mode                      ; 462                                ;
+;                                             ;                                    ;
+; Total registers                             ; 2022                               ;
+;     -- Dedicated logic registers            ; 2022                               ;
+;     -- I/O registers                        ; 0                                  ;
+;                                             ;                                    ;
+; I/O pins                                    ; 149                                ;
+; Total memory bits                           ; 7040                               ;
+; Total PLLs                                  ; 1                                  ;
+;     -- PLLs                                 ; 1                                  ;
+;                                             ;                                    ;
+; Maximum fan-out node                        ; dataController_top:dc0|clkPhase[1] ;
+; Maximum fan-out                             ; 1763                               ;
+; Total fan-out                               ; 25426                              ;
+; Average fan-out                             ; 3.57                               ;
++---------------------------------------------+------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Partition Merge RAM Summary                                                                                                                                                                                                                                        ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                                                                                           ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; TG68:m68k|TG68_fast:TG68_fast_inst|altsyncram:regfile_high_rtl_0|altsyncram_skd1:auto_generated|ALTSYNCRAM                                                     ; AUTO ; Simple Dual Port ; 17           ; 16           ; 17           ; 16           ; 272  ; None ;
+; TG68:m68k|TG68_fast:TG68_fast_inst|altsyncram:regfile_high_rtl_1|altsyncram_skd1:auto_generated|ALTSYNCRAM                                                     ; AUTO ; Simple Dual Port ; 17           ; 16           ; 17           ; 16           ; 272  ; None ;
+; TG68:m68k|TG68_fast:TG68_fast_inst|altsyncram:regfile_low_rtl_0|altsyncram_skd1:auto_generated|ALTSYNCRAM                                                      ; AUTO ; Simple Dual Port ; 17           ; 16           ; 17           ; 16           ; 272  ; None ;
+; TG68:m68k|TG68_fast:TG68_fast_inst|altsyncram:regfile_low_rtl_1|altsyncram_skd1:auto_generated|ALTSYNCRAM                                                      ; AUTO ; Simple Dual Port ; 17           ; 16           ; 17           ; 16           ; 272  ; None ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_4q14:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 64           ; 93           ; 64           ; 93           ; 5952 ; None ;
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+
+
++--------------------------+
+; Partition Merge Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Partition Merge
+    Info: Version 11.0 Build 157 04/27/2011 SJ Web Edition
+    Info: Processing started: Thu Sep 22 12:37:36 2011
+Info: Command: quartus_cdb --read_settings_files=off --write_settings_files=off PlusToo -c plusToo_top --merge=on
+Info: Using synthesis netlist for partition "Top"
+Info: Using synthesis netlist for partition "sld_hub:auto_hub"
+Info: Using synthesis netlist for partition "sld_signaltap:auto_signaltap_0"
+Info: Succesfully connected in-system debug instance "auto_signaltap_0" to all 137 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
+Info: Resolved and merged 3 partition(s)
+Info: Generating hard_block partition "hard_block:auto_generated_inst"
+    Info: Adding node "clock325MHz:cs0|altpll:altpll_component|pll"
+Info: Implemented 6284 device resources after synthesis - the final resource count might be different
+    Info: Implemented 26 input pins
+    Info: Implemented 109 output pins
+    Info: Implemented 18 bidirectional pins
+    Info: Implemented 5972 logic cells
+    Info: Implemented 157 RAM segments
+    Info: Implemented 1 PLLs
+Info: Quartus II Partition Merge was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 289 megabytes
+    Info: Processing ended: Thu Sep 22 12:37:38 2011
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

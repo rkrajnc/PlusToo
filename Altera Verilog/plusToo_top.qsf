@@ -1,0 +1,474 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2011 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 11.0 Build 157 04/27/2011 SJ Web Edition
+# Date created = 10:34:40  September 15, 2011
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		plusToo_top_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C20F484C7
+set_global_assignment -name TOP_LEVEL_ENTITY plusToo_top
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 11.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:34:40  SEPTEMBER 15, 2011"
+set_global_assignment -name LAST_QUARTUS_VERSION 11.0
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_L1 -to clk50
+set_location_assignment PIN_D9 -to red[0]
+set_location_assignment PIN_C9 -to red[1]
+set_location_assignment PIN_A7 -to red[2]
+set_location_assignment PIN_B7 -to red[3]
+set_location_assignment PIN_B8 -to green[0]
+set_location_assignment PIN_C10 -to green[1]
+set_location_assignment PIN_B9 -to green[2]
+set_location_assignment PIN_A8 -to green[3]
+set_location_assignment PIN_A9 -to blue[0]
+set_location_assignment PIN_D11 -to blue[1]
+set_location_assignment PIN_A10 -to blue[2]
+set_location_assignment PIN_B10 -to blue[3]
+set_location_assignment PIN_A11 -to hsync
+set_location_assignment PIN_B11 -to vsync
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED WITH WEAK PULL-UP"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH testbench -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME testbench -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id testbench
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testbench -section_id testbench
+set_global_assignment -name EDA_TEST_BENCH_FILE testbench.v -section_id testbench
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_location_assignment PIN_J2 -to hex0[0]
+set_location_assignment PIN_J1 -to hex0[1]
+set_location_assignment PIN_H2 -to hex0[2]
+set_location_assignment PIN_H1 -to hex0[3]
+set_location_assignment PIN_F2 -to hex0[4]
+set_location_assignment PIN_F1 -to hex0[5]
+set_location_assignment PIN_E2 -to hex0[6]
+set_location_assignment PIN_E1 -to hex1[0]
+set_location_assignment PIN_H6 -to hex1[1]
+set_location_assignment PIN_H5 -to hex1[2]
+set_location_assignment PIN_H4 -to hex1[3]
+set_location_assignment PIN_G3 -to hex1[4]
+set_location_assignment PIN_D2 -to hex1[5]
+set_location_assignment PIN_D1 -to hex1[6]
+set_location_assignment PIN_G5 -to hex2[0]
+set_location_assignment PIN_G6 -to hex2[1]
+set_location_assignment PIN_C2 -to hex2[2]
+set_location_assignment PIN_C1 -to hex2[3]
+set_location_assignment PIN_E3 -to hex2[4]
+set_location_assignment PIN_E4 -to hex2[5]
+set_location_assignment PIN_D3 -to hex2[6]
+set_location_assignment PIN_D4 -to hex3[6]
+set_location_assignment PIN_F4 -to hex3[0]
+set_location_assignment PIN_D5 -to hex3[1]
+set_location_assignment PIN_D6 -to hex3[2]
+set_location_assignment PIN_J4 -to hex3[3]
+set_location_assignment PIN_L8 -to hex3[4]
+set_location_assignment PIN_F3 -to hex3[5]
+set_location_assignment PIN_R22 -to key[0]
+set_location_assignment PIN_R21 -to key[1]
+set_location_assignment PIN_T22 -to key[2]
+set_location_assignment PIN_T21 -to key[3]
+set_location_assignment PIN_Y21 -to ledg[7]
+set_location_assignment PIN_Y22 -to ledg[6]
+set_location_assignment PIN_W21 -to ledg[5]
+set_location_assignment PIN_W22 -to ledg[4]
+set_location_assignment PIN_V21 -to ledg[3]
+set_location_assignment PIN_V22 -to ledg[2]
+set_location_assignment PIN_U21 -to ledg[1]
+set_location_assignment PIN_U22 -to ledg[0]
+set_location_assignment PIN_R17 -to ledr[9]
+set_location_assignment PIN_R18 -to ledr[8]
+set_location_assignment PIN_U18 -to ledr[7]
+set_location_assignment PIN_Y18 -to ledr[6]
+set_location_assignment PIN_V19 -to ledr[5]
+set_location_assignment PIN_T18 -to ledr[4]
+set_location_assignment PIN_Y19 -to ledr[3]
+set_location_assignment PIN_U19 -to ledr[2]
+set_location_assignment PIN_R19 -to ledr[1]
+set_location_assignment PIN_R20 -to ledr[0]
+set_location_assignment PIN_L2 -to sw[9]
+set_location_assignment PIN_M1 -to sw[8]
+set_location_assignment PIN_M2 -to sw[7]
+set_location_assignment PIN_U11 -to sw[6]
+set_location_assignment PIN_U12 -to sw[5]
+set_location_assignment PIN_W12 -to sw[4]
+set_location_assignment PIN_V12 -to sw[3]
+set_location_assignment PIN_M22 -to sw[2]
+set_location_assignment PIN_L21 -to sw[1]
+set_location_assignment PIN_L22 -to sw[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to green[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to green[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to green[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to green[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to blue[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to blue[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to blue[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to blue[0]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to red[3]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to red[2]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to red[1]
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to red[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to green[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to green[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to green[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to green[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to blue[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to blue[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to blue[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to blue[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to red[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to red[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to red[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to red[0]
+set_location_assignment PIN_R13 -to flashAddr[21]
+set_location_assignment PIN_U13 -to flashAddr[20]
+set_location_assignment PIN_V14 -to flashAddr[19]
+set_location_assignment PIN_U14 -to flashAddr[18]
+set_location_assignment PIN_AA20 -to flashAddr[17]
+set_location_assignment PIN_AB12 -to flashAddr[16]
+set_location_assignment PIN_AA12 -to flashAddr[15]
+set_location_assignment PIN_AB13 -to flashAddr[14]
+set_location_assignment PIN_AA13 -to flashAddr[13]
+set_location_assignment PIN_AB14 -to flashAddr[12]
+set_location_assignment PIN_T12 -to flashAddr[11]
+set_location_assignment PIN_R12 -to flashAddr[10]
+set_location_assignment PIN_Y13 -to flashAddr[9]
+set_location_assignment PIN_R14 -to flashAddr[8]
+set_location_assignment PIN_W15 -to flashAddr[7]
+set_location_assignment PIN_V15 -to flashAddr[6]
+set_location_assignment PIN_U15 -to flashAddr[5]
+set_location_assignment PIN_T15 -to flashAddr[4]
+set_location_assignment PIN_R15 -to flashAddr[3]
+set_location_assignment PIN_Y16 -to flashAddr[2]
+set_location_assignment PIN_AA14 -to flashAddr[1]
+set_location_assignment PIN_AB20 -to flashAddr[0]
+set_location_assignment PIN_AA19 -to flashData[7]
+set_location_assignment PIN_AB19 -to flashData[6]
+set_location_assignment PIN_AA18 -to flashData[5]
+set_location_assignment PIN_AB18 -to flashData[4]
+set_location_assignment PIN_AA17 -to flashData[3]
+set_location_assignment PIN_AB17 -to flashData[2]
+set_location_assignment PIN_AA16 -to flashData[1]
+set_location_assignment PIN_AB16 -to flashData[0]
+set_location_assignment PIN_Y5 -to sramAddr[17]
+set_location_assignment PIN_Y6 -to sramAddr[16]
+set_location_assignment PIN_T7 -to sramAddr[15]
+set_location_assignment PIN_R10 -to sramAddr[14]
+set_location_assignment PIN_U10 -to sramAddr[13]
+set_location_assignment PIN_Y10 -to sramAddr[12]
+set_location_assignment PIN_T11 -to sramAddr[11]
+set_location_assignment PIN_R11 -to sramAddr[10]
+set_location_assignment PIN_W11 -to sramAddr[9]
+set_location_assignment PIN_V11 -to sramAddr[8]
+set_location_assignment PIN_AB11 -to sramAddr[7]
+set_location_assignment PIN_AA11 -to sramAddr[6]
+set_location_assignment PIN_AB10 -to sramAddr[5]
+set_location_assignment PIN_AA5 -to sramAddr[4]
+set_location_assignment PIN_AB4 -to sramAddr[3]
+set_location_assignment PIN_AA4 -to sramAddr[2]
+set_location_assignment PIN_AB3 -to sramAddr[1]
+set_location_assignment PIN_AA3 -to sramAddr[0]
+set_location_assignment PIN_U8 -to sramData[15]
+set_location_assignment PIN_V8 -to sramData[14]
+set_location_assignment PIN_W8 -to sramData[13]
+set_location_assignment PIN_R9 -to sramData[12]
+set_location_assignment PIN_U9 -to sramData[11]
+set_location_assignment PIN_V9 -to sramData[10]
+set_location_assignment PIN_W9 -to sramData[9]
+set_location_assignment PIN_Y9 -to sramData[8]
+set_location_assignment PIN_AB9 -to sramData[7]
+set_location_assignment PIN_AA9 -to sramData[6]
+set_location_assignment PIN_AB8 -to sramData[5]
+set_location_assignment PIN_AA8 -to sramData[4]
+set_location_assignment PIN_AB7 -to sramData[3]
+set_location_assignment PIN_AA7 -to sramData[2]
+set_location_assignment PIN_AB6 -to sramData[1]
+set_location_assignment PIN_AA6 -to sramData[0]
+set_location_assignment PIN_AA15 -to _flashOE
+set_location_assignment PIN_Y14 -to _flashWE
+set_location_assignment PIN_AB15 -to _flashCE
+set_location_assignment PIN_AB5 -to _sramCE
+set_location_assignment PIN_Y7 -to _sramLDS
+set_location_assignment PIN_W7 -to _sramUDS
+set_location_assignment PIN_T8 -to _sramOE
+set_location_assignment PIN_AA10 -to _sramWE
+set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name ENABLE_SIGNALTAP ON
+set_global_assignment -name USE_SIGNALTAP_FILE stp2.stp
+set_global_assignment -name SLD_NODE_CREATOR_ID 110 -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_ENTITY_NAME sld_signaltap -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_INFO=805334528" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_POWER_UP_TRIGGER=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ATTRIBUTE_MEM_MODE=OFF" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_FLOW_USE_GENERATED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_STATE_BITS=11" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_BUFFER_FULL_STOP=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_CURRENT_RESOURCE_WIDTH=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_IN_ENABLED=0" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ADVANCED_TRIGGER_ENTITY=basic,1," -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_LEVEL_PIPELINE=1" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_ENABLE_ADVANCED_TRIGGER=0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[0] -to "TG68:m68k|addr[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[1] -to "TG68:m68k|addr[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[2] -to "TG68:m68k|addr[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[3] -to "TG68:m68k|addr[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[4] -to "TG68:m68k|addr[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[5] -to "TG68:m68k|addr[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[6] -to "TG68:m68k|addr[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[7] -to "TG68:m68k|addr[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[8] -to "TG68:m68k|addr[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[9] -to "TG68:m68k|addr[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[10] -to "TG68:m68k|addr[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[11] -to "TG68:m68k|addr[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[12] -to "TG68:m68k|addr[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[13] -to "TG68:m68k|addr[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[14] -to "TG68:m68k|addr[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[15] -to "TG68:m68k|addr[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[16] -to "TG68:m68k|addr[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[17] -to "TG68:m68k|addr[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[18] -to "TG68:m68k|addr[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[19] -to "TG68:m68k|addr[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[20] -to "TG68:m68k|addr[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[21] -to "TG68:m68k|addr[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[22] -to "TG68:m68k|addr[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[23] -to "TG68:m68k|addr[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[24] -to "TG68:m68k|addr[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[25] -to "TG68:m68k|addr[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[26] -to "TG68:m68k|addr[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[27] -to "TG68:m68k|addr[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[28] -to "TG68:m68k|addr[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[29] -to "TG68:m68k|addr[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[30] -to "TG68:m68k|addr[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[31] -to "TG68:m68k|addr[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[0] -to "TG68:m68k|addr[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[1] -to "TG68:m68k|addr[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[2] -to "TG68:m68k|addr[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[3] -to "TG68:m68k|addr[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[4] -to "TG68:m68k|addr[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[5] -to "TG68:m68k|addr[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[6] -to "TG68:m68k|addr[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[7] -to "TG68:m68k|addr[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[8] -to "TG68:m68k|addr[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[9] -to "TG68:m68k|addr[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[10] -to "TG68:m68k|addr[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[11] -to "TG68:m68k|addr[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[12] -to "TG68:m68k|addr[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[13] -to "TG68:m68k|addr[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[14] -to "TG68:m68k|addr[22]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[15] -to "TG68:m68k|addr[23]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[16] -to "TG68:m68k|addr[24]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[17] -to "TG68:m68k|addr[25]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[18] -to "TG68:m68k|addr[26]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[19] -to "TG68:m68k|addr[27]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[20] -to "TG68:m68k|addr[28]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[21] -to "TG68:m68k|addr[29]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[22] -to "TG68:m68k|addr[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[23] -to "TG68:m68k|addr[30]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[24] -to "TG68:m68k|addr[31]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[25] -to "TG68:m68k|addr[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[26] -to "TG68:m68k|addr[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[27] -to "TG68:m68k|addr[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[28] -to "TG68:m68k|addr[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[29] -to "TG68:m68k|addr[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[30] -to "TG68:m68k|addr[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[31] -to "TG68:m68k|addr[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[32] -to "TG68:m68k|data_in[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[33] -to "TG68:m68k|data_in[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[34] -to "TG68:m68k|data_in[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[35] -to "TG68:m68k|data_in[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[36] -to "TG68:m68k|data_in[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[37] -to "TG68:m68k|data_in[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[38] -to "TG68:m68k|data_in[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[39] -to "TG68:m68k|data_in[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[40] -to "TG68:m68k|data_in[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[41] -to "TG68:m68k|data_in[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[42] -to "TG68:m68k|data_in[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[43] -to "TG68:m68k|data_in[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[44] -to "TG68:m68k|data_in[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[45] -to "TG68:m68k|data_in[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[46] -to "TG68:m68k|data_in[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[47] -to "TG68:m68k|data_in[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[48] -to "TG68:m68k|data_out[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[49] -to "TG68:m68k|data_out[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[50] -to "TG68:m68k|data_out[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[51] -to "TG68:m68k|data_out[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[52] -to "TG68:m68k|data_out[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[53] -to "TG68:m68k|data_out[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[54] -to "TG68:m68k|data_out[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[55] -to "TG68:m68k|data_out[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[56] -to "TG68:m68k|data_out[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[57] -to "TG68:m68k|data_out[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[58] -to "TG68:m68k|data_out[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[59] -to "TG68:m68k|data_out[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[60] -to "TG68:m68k|data_out[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[61] -to "TG68:m68k|data_out[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[62] -to "TG68:m68k|data_out[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[63] -to "TG68:m68k|data_out[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[64] -to "TG68:m68k|dtack" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[65] -to "TG68:m68k|rw" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_clk -to "dataController_top:dc0|clkPhase[1]" -section_id auto_signaltap_0
+set_location_assignment PIN_J14 -to mouseData
+set_location_assignment PIN_H15 -to mouseClk
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
+set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[66] -to "dataController_top:dc0|iwm:i|SEL" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[67] -to "dataController_top:dc0|iwm:i|_cpuLDS" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[68] -to "dataController_top:dc0|iwm:i|ca0" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[69] -to "dataController_top:dc0|iwm:i|ca1" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[70] -to "dataController_top:dc0|iwm:i|ca2" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[71] -to "dataController_top:dc0|iwm:i|diskEnableInt" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SEGMENT_SIZE=128" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_SAMPLE_DEPTH=128" -section_id auto_signaltap_0
+set_global_assignment -name SDC_FILE plusToo_top.sdc
+set_global_assignment -name VERILOG_FILE scc.v
+set_global_assignment -name VERILOG_FILE ps2_mouse.v
+set_global_assignment -name VERILOG_FILE ps2.v
+set_global_assignment -name VERILOG_FILE iwm.v
+set_global_assignment -name VERILOG_FILE led7seg.v
+set_global_assignment -name VERILOG_TEST_BENCH_FILE testbench.v
+set_global_assignment -name VHDL_FILE TG68_fast.vhd
+set_global_assignment -name VHDL_FILE TG68.vhd
+set_global_assignment -name VERILOG_FILE via.v
+set_global_assignment -name VERILOG_FILE addrDecoder.v
+set_global_assignment -name VERILOG_FILE addrController_top.v
+set_global_assignment -name VERILOG_FILE dataController_top.v
+set_global_assignment -name VERILOG_FILE videoTimer.v
+set_global_assignment -name VERILOG_FILE videoShifter.v
+set_global_assignment -name VERILOG_FILE plusToo_top.v
+set_global_assignment -name QIP_FILE clock325MHz.qip
+set_global_assignment -name QIP_FILE blockROM4K.qip
+set_global_assignment -name QIP_FILE blockRAM20K.qip
+set_global_assignment -name VERILOG_FILE debugPanel.v
+set_global_assignment -name VERILOG_FILE fontGen.v
+set_global_assignment -name VERILOG_FILE romAdapter.v
+set_global_assignment -name QIP_FILE logicAnalyzer.qip
+set_global_assignment -name SIGNALTAP_FILE stp2.stp
+set_global_assignment -name VERILOG_FILE floppy.v
+set_global_assignment -name QIP_FILE rom4K.qip
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[72] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[73] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[74] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[75] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[76] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[77] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[78] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[79] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[127] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[128] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[129] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[130] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[131] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[132] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[133] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[134] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[135] -to "dataController_top:dc0|iwm:i|lstrb" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[136] -to "dataController_top:dc0|iwm:i|q6" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[137] -to "dataController_top:dc0|iwm:i|q7" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[138] -to "dataController_top:dc0|iwm:i|selectExternalDrive" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[139] -to "dataController_top:dc0|iwm:i|selectIWM" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_DATA_BITS=140" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[80] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[81] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[82] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[83] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[84] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[85] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[86] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[87] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[88] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[89] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[90] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[91] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[92] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[93] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[94] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[95] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[96] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|driveSide" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[97] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[98] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[99] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[100] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[101] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[102] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[103] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[104] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAck" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[105] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[106] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[10]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[107] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[11]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[108] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[12]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[109] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[13]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[110] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[14]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[111] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[15]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[112] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[16]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[113] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[17]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[114] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[18]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[115] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[19]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[116] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[117] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[20]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[118] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[21]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[119] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[120] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[121] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[122] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[123] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[124] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[7]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[125] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[8]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_data_in[126] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[9]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[32] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAck" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[33] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[0]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[34] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[1]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[35] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[2]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[36] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[3]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[37] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[4]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[38] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[5]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[39] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[6]" -section_id auto_signaltap_0
+set_instance_assignment -name CONNECT_TO_SLD_NODE_ENTITY_PORT acq_trigger_in[40] -to "dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[7]" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_TRIGGER_BITS=41" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_INVERSION_MASK_LENGTH=144" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_LOWORD=54015" -section_id auto_signaltap_0
+set_global_assignment -name SLD_NODE_PARAMETER_ASSIGNMENT "SLD_NODE_CRC_HIWORD=64261" -section_id auto_signaltap_0
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

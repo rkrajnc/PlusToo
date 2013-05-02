@@ -1,0 +1,85 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clock325MHz:cs0|altpll:altpll_component|_clk0'
+Slack : 6.537
+TNS   : 0.000
+
+Type  : Slow Model Setup 'dataController_top:dc0|clkPhase[1]'
+Slack : 24.374
+TNS   : 0.000
+
+Type  : Slow Model Hold 'clock325MHz:cs0|altpll:altpll_component|_clk0'
+Slack : 0.065
+TNS   : 0.000
+
+Type  : Slow Model Hold 'dataController_top:dc0|clkPhase[1]'
+Slack : 0.445
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'dataController_top:dc0|clkPhase[1]'
+Slack : 48.995
+TNS   : 0.000
+
+Type  : Slow Model Removal 'dataController_top:dc0|clkPhase[1]'
+Slack : 4.138
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk50'
+Slack : 10.000
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock325MHz:cs0|altpll:altpll_component|_clk0'
+Slack : 14.273
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'dataController_top:dc0|clkPhase[1]'
+Slack : 58.974
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 97.531
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clock325MHz:cs0|altpll:altpll_component|_clk0'
+Slack : 20.929
+TNS   : 0.000
+
+Type  : Fast Model Setup 'dataController_top:dc0|clkPhase[1]'
+Slack : 47.505
+TNS   : 0.000
+
+Type  : Fast Model Hold 'clock325MHz:cs0|altpll:altpll_component|_clk0'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Hold 'dataController_top:dc0|clkPhase[1]'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'dataController_top:dc0|clkPhase[1]'
+Slack : 56.579
+TNS   : 0.000
+
+Type  : Fast Model Removal 'dataController_top:dc0|clkPhase[1]'
+Slack : 1.692
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk50'
+Slack : 10.000
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock325MHz:cs0|altpll:altpll_component|_clk0'
+Slack : 14.384
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'dataController_top:dc0|clkPhase[1]'
+Slack : 59.158
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 97.778
+TNS   : 0.000
+
+------------------------------------------------------------

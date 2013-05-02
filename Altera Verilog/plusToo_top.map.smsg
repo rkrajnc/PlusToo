@@ -1,0 +1,12 @@
+Warning: Parallel compilation is not licensed and has been disabled
+Warning (10268): Verilog HDL information at iwm.v(203): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at via.v(171): always construct contains both blocking and non-blocking assignments
+Warning (10036): Verilog HDL or VHDL warning at TG68_fast.vhd(335): object "illegal_write_mode" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at TG68_fast.vhd(336): object "illegal_read_mode" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at TG68_fast.vhd(337): object "illegal_byteaddr" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at TG68_fast.vhd(345): object "trap_chk" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at videoTimer.v(68): truncated value with size 32 to match size of target (22)
+Warning: Inferred dual-clock RAM node "TG68:m68k|TG68_fast:TG68_fast_inst|regfile_low_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning: Inferred dual-clock RAM node "TG68:m68k|TG68_fast:TG68_fast_inst|regfile_low_rtl_1" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning: Inferred dual-clock RAM node "TG68:m68k|TG68_fast:TG68_fast_inst|regfile_high_rtl_0" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.
+Warning: Inferred dual-clock RAM node "TG68:m68k|TG68_fast:TG68_fast_inst|regfile_high_rtl_1" from synchronous design logic.  The read-during-write behavior of a dual-clock RAM is undefined and may not match the behavior of the original design.

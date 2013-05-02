@@ -1,0 +1,721 @@
+<session jtag_chain="USB-Blaster [USB-0]" jtag_device="@1: EP2C(15|20) (0x020B30DD)" sof_file="">
+  <display_tree gui_logging_enabled="0">
+    <display_branch instance="auto_signaltap_0" signal_set="USE_GLOBAL_TEMP" trigger="USE_GLOBAL_TEMP"/>
+  </display_tree>
+  <instance entity_name="sld_signaltap" is_auto_node="yes" is_expanded="true" name="auto_signaltap_0" source_file="sld_signaltap.vhd">
+    <node_ip_info instance_id="0" mfg_id="110" node_id="0" version="6"/>
+    <position_info>
+      <single attribute="active tab" value="1"/>
+      <single attribute="data horizontal scroll position" value="19"/>
+      <single attribute="data vertical scroll position" value="0"/>
+      <single attribute="setup hierarchy TG68:m68k" value="3"/>
+      <single attribute="setup hierarchy dataController_top:dc0" value="3"/>
+      <single attribute="setup hierarchy plusToo_top" value="3"/>
+      <single attribute="setup hierarchy ps2:ps20" value="3"/>
+      <single attribute="setup hierarchy ps2_mouse:mouse" value="3"/>
+      <single attribute="setup hierarchy root" value="3"/>
+      <single attribute="setup horizontal scroll position" value="0"/>
+      <single attribute="setup vertical scroll position" value="4"/>
+      <single attribute="zoom level denominator" value="1"/>
+      <single attribute="zoom level numerator" value="8"/>
+      <single attribute="zoom offset denominator" value="1"/>
+      <single attribute="zoom offset numerator" value="16368"/>
+      <multi attribute="timebars" size="1" value="62"/>
+    </position_info>
+    <signal_set global_temp="1" name="signal_set: 2011/10/09 12:33:38  #0">
+      <clock name="dataController_top:dc0|clkPhase[1]" polarity="posedge" tap_mode="classic"/>
+      <config ram_type="M4K" reserved_data_nodes="0" reserved_storage_qualifier_nodes="0" reserved_trigger_nodes="0" sample_depth="128" trigger_in_enable="no" trigger_out_enable="no"/>
+      <top_entity/>
+      <signal_vec>
+        <trigger_input_vec>
+          <wire name="TG68:m68k|addr[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAck" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[7]" tap_mode="classic" type="combinatorial"/>
+        </trigger_input_vec>
+        <data_input_vec>
+          <wire name="TG68:m68k|addr[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|dtack" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|rw" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|SEL" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|_cpuLDS" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|ca0" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|ca1" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|ca2" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|diskEnableInt" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[0]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[1]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[2]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[3]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[4]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[5]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[6]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[7]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[0]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[10]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[11]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[12]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[13]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[14]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[15]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[1]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[2]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[3]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[4]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[5]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[6]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[7]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[8]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[9]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveSide" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[0]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[1]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[2]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[3]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[4]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[5]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[6]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAck" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|lstrb" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|q6" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|q7" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|selectExternalDrive" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|selectIWM" tap_mode="classic" type="combinatorial"/>
+        </data_input_vec>
+        <storage_qualifier_input_vec>
+          <wire name="TG68:m68k|addr[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[22]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[23]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[24]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[25]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[26]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[27]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[28]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[29]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[30]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[31]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|addr[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_in[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|data_out[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|dtack" tap_mode="classic" type="combinatorial"/>
+          <wire name="TG68:m68k|rw" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|SEL" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|_cpuLDS" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|ca0" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|ca1" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|ca2" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|diskEnableInt" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[0]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[1]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[2]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[3]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[4]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[5]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[6]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[7]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[0]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[10]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[11]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[12]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[13]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[14]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[15]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[1]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[2]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[3]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[4]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[5]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[6]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[7]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[8]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[9]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveSide" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[0]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[1]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[2]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[3]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[4]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[5]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[6]" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAck" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[10]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[11]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[12]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[13]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[14]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[15]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[16]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[17]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[18]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[19]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[20]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[21]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[8]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[9]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[0]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[1]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[2]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[3]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[4]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[5]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[6]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[7]" tap_mode="classic" type="combinatorial"/>
+          <wire name="dataController_top:dc0|iwm:i|lstrb" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|q6" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|q7" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|selectExternalDrive" tap_mode="classic" type="register"/>
+          <wire name="dataController_top:dc0|iwm:i|selectIWM" tap_mode="classic" type="combinatorial"/>
+        </storage_qualifier_input_vec>
+      </signal_vec>
+      <presentation>
+        <data_view>
+          <bus is_signal_inverted="no" link="all" name="TG68:m68k|addr" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="TG68:m68k|addr[31]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[30]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[29]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[28]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[27]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[26]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[25]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[24]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[23]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[22]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[21]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[20]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[19]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[18]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[17]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[16]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[15]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[14]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[13]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[12]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[11]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[10]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[9]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[8]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[7]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[6]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[5]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[4]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[3]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[2]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[1]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="TG68:m68k|dtack"/>
+          <net is_signal_inverted="no" name="TG68:m68k|rw"/>
+          <bus is_signal_inverted="no" link="all" name="TG68:m68k|data_in" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[15]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[14]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[13]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[12]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[11]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[10]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[9]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[8]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[7]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[6]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[5]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[4]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[3]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[2]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[1]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="TG68:m68k|data_out" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[15]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[14]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[13]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[12]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[11]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[10]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[9]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[8]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[7]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[6]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[5]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[4]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[3]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[2]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[1]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|ca0"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|ca1"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|ca2"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|SEL"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|selectExternalDrive"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|selectIWM"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|_cpuLDS"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|diskEnableInt"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|lstrb"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|q6"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|q7"/>
+          <bus is_signal_inverted="no" link="all" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[7]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[6]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[5]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[4]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[3]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[2]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[1]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[7]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[6]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[5]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[4]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[3]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[2]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[1]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAck"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveSide"/>
+          <bus is_signal_inverted="no" link="all" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[6]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[5]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[4]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[3]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[2]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[1]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[15]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[14]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[13]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[12]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[11]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[10]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[9]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[8]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[7]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[6]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[5]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[4]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[3]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[2]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[1]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[21]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[20]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[19]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[18]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[17]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[16]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[15]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[14]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[13]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[12]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[11]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[10]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[9]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[8]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[7]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[6]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[5]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[4]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[3]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[2]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[1]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[0]"/>
+          </bus>
+        </data_view>
+        <setup_view>
+          <bus is_signal_inverted="no" link="all" name="TG68:m68k|addr" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="TG68:m68k|addr[31]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[30]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[29]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[28]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[27]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[26]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[25]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[24]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[23]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[22]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[21]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[20]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[19]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[18]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[17]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[16]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[15]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[14]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[13]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[12]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[11]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[10]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[9]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[8]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[7]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[6]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[5]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[4]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[3]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[2]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[1]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|addr[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="TG68:m68k|dtack"/>
+          <net is_signal_inverted="no" name="TG68:m68k|rw"/>
+          <bus is_signal_inverted="no" link="all" name="TG68:m68k|data_in" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[15]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[14]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[13]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[12]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[11]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[10]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[9]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[8]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[7]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[6]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[5]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[4]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[3]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[2]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[1]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_in[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="TG68:m68k|data_out" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[15]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[14]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[13]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[12]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[11]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[10]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[9]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[8]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[7]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[6]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[5]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[4]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[3]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[2]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[1]"/>
+            <net is_signal_inverted="no" name="TG68:m68k|data_out[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|ca0"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|ca1"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|ca2"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|SEL"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|selectExternalDrive"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|selectIWM"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|_cpuLDS"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|diskEnableInt"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|lstrb"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|q6"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|q7"/>
+          <bus is_signal_inverted="no" link="all" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[7]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[6]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[5]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[4]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[3]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[2]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[1]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageData[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[7]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[6]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[5]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[4]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[3]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[2]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[1]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[0]"/>
+          </bus>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAck"/>
+          <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveSide"/>
+          <bus is_signal_inverted="no" link="all" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[6]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[5]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[4]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[3]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[2]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[1]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|driveTrack[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset" order="msb_to_lsb" radix="hex" state="collapse" type="register">
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[15]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[14]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[13]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[12]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[11]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[10]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[9]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[8]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[7]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[6]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[5]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[4]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[3]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[2]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[1]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|diskImageHeadOffset[0]"/>
+          </bus>
+          <bus is_signal_inverted="no" link="all" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr" order="msb_to_lsb" radix="hex" state="collapse" type="combinatorial">
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[21]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[20]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[19]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[18]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[17]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[16]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[15]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[14]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[13]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[12]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[11]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[10]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[9]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[8]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[7]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[6]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[5]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[4]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[3]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[2]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[1]"/>
+            <net is_signal_inverted="no" name="dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAddr[0]"/>
+          </bus>
+        </setup_view>
+      </presentation>
+      <trigger attribute_mem_mode="false" gap_record="true" global_temp="1" name="trigger: 2011/10/09 12:33:47  #0" position="post" power_up_trigger_mode="false" record_data_gap="true" segment_size="128" storage_mode="off" storage_qualifier_disabled="no" storage_qualifier_port_is_pin="false" storage_qualifier_port_name="auto_stp_external_storage_qualifier" storage_qualifier_port_tap_mode="classic" trigger_in="dont_care" trigger_out="active high" trigger_type="circular">
+        <power_up_trigger position="pre" storage_qualifier_disabled="no" trigger_in="dont_care" trigger_out="active high"/>
+        <events use_custom_flow_control="no">
+          <level enabled="yes" name="condition1" type="basic">'dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadAck' == high &amp;&amp; 'dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[0]' == low &amp;&amp; 'dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[1]' == low &amp;&amp; 'dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[2]' == high &amp;&amp; 'dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[3]' == low &amp;&amp; 'dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[4]' == low &amp;&amp; 'dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[5]' == low &amp;&amp; 'dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[6]' == low &amp;&amp; 'dataController_top:dc0|iwm:i|floppy:floppyInt|extraRomReadData[7]' == high
+            <power_up enabled="yes">
+            </power_up>
+            <op_node/>
+          </level>
+        </events>
+        <storage_qualifier_events>
+          <transitional>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            <pwr_up_transitional>00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</pwr_up_transitional>
+          </transitional>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+          <storage_qualifier_level type="basic">
+            <power_up>
+            </power_up>
+            <op_node/>
+          </storage_qualifier_level>
+        </storage_qualifier_events>
+      </trigger>
+    </signal_set>
+  </instance>
+  <mnemonics/>
+  <static_plugin_mnemonics/>
+  <global_info>
+    <single attribute="active instance" value="0"/>
+    <single attribute="config widget visible" value="1"/>
+    <single attribute="data log widget visible" value="1"/>
+    <single attribute="hierarchy widget visible" value="1"/>
+    <single attribute="instance widget visible" value="1"/>
+    <single attribute="jtag widget visible" value="1"/>
+    <multi attribute="column width" size="23" value="34,34,191,74,68,70,88,88,98,98,88,88,110,101,101,101,101,101,101,101,101,24,78"/>
+    <multi attribute="frame size" size="2" value="1680,988"/>
+    <multi attribute="jtag widget size" size="2" value="334,120"/>
+  </global_info>
+</session>
